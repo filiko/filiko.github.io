@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>testing</title>
+    <link rel="stylesheet" href="./styles/stacked.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link href="http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext" rel="stylesheet">
+
+
+
+
+  </head>
+
+<body>
+  <div class="content-wrapper">
+      <aside class="sidebar">
+          <ul class="nav-list">
+              <li class="nav-item"><a href="./"><i class="material-icons nav-item__icon">home</i><span class="nav-item__text"> Introduction</span></a></li>
+              <li class="nav-item"><a href="bio.html"><i class="material-icons nav-item__icon">assignment_ind</i><span class="nav-item__text">About&nbsp;Me</span></a></li>
+              <li class="nav-item"><a href="experience.html"><i class="material-icons nav-item__icon">biotech</i><span class="nav-item__text">Professional&nbsp;Experience</span></a></li>
+              <li class="nav-item"><a href="current.html"><i class="material-icons nav-item__icon">code</i><span class="nav-item__text">Current&nbsp;Projects</span></a></li>
+              <li class="nav-item"><a href="projects" onclick="return false;"><i class="material-icons nav-item__icon">engineering</i><span class="nav-item__text">Research&nbsp;&&nbsp;Design&nbsp;Projects</span></a></li>
+              <li class="nav-item"><a href="blog" onclick="return false;"><i class="material-icons nav-item__icon">edit</i><span class="nav-item__text">Blog</span></a></li>
+              <li class="nav-item"><a href="community" onclick="return false;"><i class="material-icons nav-item__icon">group</i><span class="nav-item__text">Community&nbsp;Engagement</span></a></li>
+            </ul>
+        </aside>
+  </div>
+
+
+
+  <div id="main-content">
+
+    <div class = row>
+
+        <div> 
+            
+        <h1> Predictive Model</h1>
+        <p> In order to better analyze the data and increase speed of development, I took it upon myself to create a program that would provide visual guidance on how to arrive at target respiration rates based on several laser and design variables. Instead of siftin through a dozen columns with hundreds of rows, the model could update itself and provide the user with configurations that should be tested, based on current strain, media, and seal design.</p>
+
+
+        
+        </div>
+
+
+
+
+
+
+        Power | Velocity
+        <form id="inputForm">
+          <input class="form-input" type="number" step="0.1" name="n1" required>
+          <input class="form-input" type="number" step="0.1" name="n2" required>
+          <select name="highLow">
+            <option value="high">Contamination</option>
+            <option value="low">Condensation</option>
+          </select>
+          <select name="DesignNum">
+            <option value="STD5Row">Standard 5 Row</option>
+            <option value="low">Condensation</option>
+          </select>
+          <button type="submit">Update Array</button>
+        </form>
+        
+      <script src="main.js"></script>
+
+    </div>
+</div>
+
+</body>
+
+</html>

@@ -1,0 +1,80 @@
+tree css :
+
+
+header {
+  background-color: aquamarine;
+  display: flex;
+  justify-content: center;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #e4e4e4;
+}
+
+.tree .leaves {
+  width: 200px;
+  height: 250px;
+  background-color: #a4cca4;
+  -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+          clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+.tree .trunk {
+  width: 50px;
+  height: 100px;
+  background-color: #a36943;
+  margin: 0 auto;
+}/*# sourceMappingURL=style.css.map */
+
+.sidebar {
+  /* Current styles you have. Just adding a few more below */
+  width: 250px; /* Adjust this value as needed */
+  background-color: #f5f5f5;
+  padding: 20px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar h2 {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.sidebar ul li {
+  margin-bottom: 10px;
+}
+
+.sidebar ul li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 1em;
+  transition: color 0.2s;
+}
+
+.sidebar ul li a:hover {
+  color: #007BFF; /* Change this to your preferred hover color */
+}
+
+.download-resume {
+  display: block;
+  margin-top: 20px;
+  text-align: center;
+  background-color: #007BFF; /* Change this to your preferred button color */
+  color: #ffffff;
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.2s;
+}
+
+.download-resume:hover {
+  background-color: #0056b3; /* Slightly darker blue on hover */
+}

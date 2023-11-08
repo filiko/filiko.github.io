@@ -1,0 +1,74 @@
+nav ul, nav li {
+    margin: 0;
+    padding: 0;
+}
+
+.fa-2x {
+    font-size: 2em;
+}
+
+nav .fa {
+    display: table-cell;
+    width: 100px;
+    height: 36px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 25px;
+}
+
+.ment {
+    background: #f5f7fa;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    width: 60px;
+    overflow: hidden;
+    transition: width .05s linear;
+    z-index: 9009;
+}
+
+.ment:hover, nav.ment.expanded {
+    width: 310px;
+    overflow: visible;
+}
+
+.ment>ul {
+    margin: 7px 0;
+}
+
+.ment li {
+    width: 310px;
+}
+
+.ment li>a {
+    display: table;
+    color: #2c3e50;
+    font-family: arial;
+    font-size: 14px;
+    text-decoration: none;
+    transition: all .1s linear;
+}
+
+.ment .nav-text {
+    display: table-cell;
+    vertical-align: middle;
+    width: 355px;
+    padding-right: 10px;
+}
+
+.ment li:hover>a {
+    color: #fff;
+    background: linear-gradient(135deg, #2980b9 30%, #34495e 100%);
+}
+
+#content {
+    background-color: rgba(51, 51, 51, 0.08);
+    background: url('http://slovomarket.ru/wp-content/themes/dt-the7/images/backgrounds/patterns/full/poly.png');
+    background-size: cover;
+    text-align: center;
+    color: #2c3e50;
+    padding: 200px 0;
+    font-family: "Roboto Slab", Helvetica, Arial, Verdana, sans-serif;
+}

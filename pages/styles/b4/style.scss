@@ -1,0 +1,30 @@
+
+header{
+    background-color: aquamarine;
+    display: flex;
+    justify-content: center;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #e4e4e4;
+}
+
+.tree {
+    & .leaves {
+        width: 200px;
+        height: 250px;
+        background-color: #a4cca4;
+        clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    }
+
+    & .trunk {
+        width: 50px;
+        height: 100px;
+        background-color: #a36943;
+        margin: 0 auto;
+    }
+}

@@ -1,0 +1,124 @@
+.sidebar {
+    background: #000;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    width: 60px;
+    transition: width .3s ease;
+    z-index: 9009;
+}
+
+.sidebar:hover {
+    width: 300px;  /* Expanded width to show both icon and text */
+}
+
+.sidebar ul {
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar li {
+    list-style-type: none;
+}
+
+.sidebar li>a {
+    display: flex;
+    top: 0px;
+    align-items: center;
+    color: white;
+    font-size: 14px;
+    text-decoration: none;
+    padding: 10px;
+    position: relative;
+    width: 100%;
+}
+
+.sidebar li>a>i.fa {
+    margin-right: 10px;   /* Spacing between icon and text when revealed */
+    font-size: 20px;
+    color: #fff;  
+    z-index: 2;
+}
+
+.sidebar li>a>i.material-icons {
+    margin-right: 10px;   /* Spacing between icon and text when revealed */
+    font-size: 40px;
+    color: #fff;  
+    z-index: 2;
+}
+
+.sidebar .nav-text {
+    position: absolute;
+    left: 60px; /* Start just right of the icon */
+    top: 16px; /* Center with the icon */
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    transform: translateX(-100%); /* Starts off the screen */
+    opacity: 0;
+}
+
+.sidebar:hover .nav-text {
+    transform: translateX(0); /* Comes onto the screen when hovering */
+    opacity: 1;
+}
+
+.sidebar li:hover>a {
+    color: #12FF98;
+}
+
+.body{
+    right: 50px;
+}
+
+#main-content {
+    padding: 20px; 
+    margin-left: 60px; /* This ensures the content starts right after the sidebar */
+    transition: margin-left .3s ease;
+}
+
+.content-wrapper {
+    display: flex;
+    transition: margin-left .3s ease;
+}
+
+.content-wrapper:hover .sidebar {
+    width: 300px;
+}
+
+.content-wrapper:hover #main-content {
+    margin-left: 300px;
+}
+
+.container:hover #main-content {
+    margin-left: 300px;
+}
+
+.container {
+    display: flex;
+}
+
+
+
+#containerMatrix {
+    display: flex;
+    flex-wrap: wrap;
+    width: 550x; /* 11 boxes * 50px width + 11 borders of 1px */
+  }
+  
+  .form-input {
+    width: 42px; /* Adjust as needed */
+    height: 15px; /* Adjust as needed */
+  }
+  
+  .box {
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    border: 1px solid white;
+    text-align: center;
+    line-height: 50px;
+    background-color: rgb(var(--red), var(--green), 0);
+  }
+  
+  
